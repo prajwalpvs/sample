@@ -1,0 +1,42 @@
+<div class="row mt-5">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+              <form class="form row g-3 " #formRef="ngForm" (ngSubmit)="onSubmit(formRef)">
+                  
+                     <div class="row">
+                    
+                        <div class="col-md-4"></div>
+                     </div>
+ 
+                     <!-- radio buttons for user and admin -->
+      <div class="text-start">
+        <div class="form-check form-check-inline ">
+          <input class="form-check-input " type="radio" id="user" name="usertype" value="user" ngModel>
+          <label class="form-check-label " for="user" >User</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input " type="radio" id="admin" name="usertype" value="admin" ngModel>
+          <label class="form-check-label " for="admin">Admin</label>
+        </div>
+      </div>
+ 
+                        <div class="form-group">
+                            <label for="inputusername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="inputusername" name="username" ngModel>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="inputpassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputpassword" name="password" ngModel>
+                        </div>
+             
+                        <div class="col-6 ">
+                            <button type="submit" class="btn btn-success ">Login</button>
+                          </div>
+ 
+                         
+                    
+              </form>
+    </div>
+    <div class="col-md-3"></div>
+</div>

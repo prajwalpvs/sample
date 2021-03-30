@@ -1,0 +1,32 @@
+<div class="container text-center">
+    <div class="container" >
+      <button class="btn btn-success" (click)="goback()">Back</button>
+        <div class="row">
+          <div class="col-sm-4 " >
+            <div class="table" >
+              <thead>
+                <tr>
+                <th>Product Name</th>
+                <th>Product size</th>
+                <th>Offer details</th>
+                <th>Product color</th>
+                <th>Product Price</th>
+                <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody >
+                <tr *ngFor="let get of products; let i=index; ">
+                  <td>{{get.productname}}</td>
+                  <td>{{get.productsize}}</td>
+                  <td>{{get.offerdetails}}</td>
+                  <td>{{get.productcolor}}</td>
+                  <td>{{get.productprice}}</td>
+                  <td>
+                    <button class="btn btn-danger" (click)="deleteproduct(get.productname)">X</button>
+                  </td>
+                </tr>
+              </tbody>
+            </div>
+            </div>
+          </div>
+        </div>
